@@ -1,0 +1,57 @@
+---
+title: "R Notebook -- A Very Brief Introduction"
+output: html_notebook
+---
+
+
+
+## A Very Brief Introduction
+
+In this introductory tutorial, I will use the work from an exercise that I completed to show how R Notebook documents work.
+
+
+
+## A Very Brief Chunk
+
+Below is our first example of a "chunk". Chunks are used to execute R code within the document.
+
+```{r code1}
+Code <- "Some code goes here."
+
+```
+
+
+
+## Executing a Chunk
+
+Now, let's execute a chunk! Because the above chunk includes no output, we will print "Code" in order to illustrate chunk output:
+
+```{r code2}
+Code <- "Some code goes here."
+print(Code)
+
+```
+
+
+Chunks are not independent! That is, you can have a chunk further along in your R Notebook document work with a variable defined
+    in an earlier chunk:
+
+```{r code3}
+print(Code)
+```
+
+
+
+
+## 
+
+RStudio includes the 50x2 list "cars" as a default variable. We make use of that list here to show an example of a more
+    visual output:
+    
+```{r code4}
+plot(cars)
+```
+
+
+
+
